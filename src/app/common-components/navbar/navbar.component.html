@@ -1,0 +1,75 @@
+<div class="navbar">
+   <div class="navbar1">
+      <div class="inner1">
+         <div>
+            <span class="ti">SHOPPING CENTER: </span>
+            <span class="num"> (88) 1900 123 456</span>
+         </div>
+         <div class="top-nav">
+            <div class="nav-p bc">
+               <p class="nav2">{{setlanguage}}</p>
+               <div class="drop-b">
+                  <div (click)="setTopData($event)" class="drop1">{{language[0]}}</div>
+                  <div (click)="setTopData($event)" class="drop1">{{language[1]}}</div>
+               </div>
+            </div>
+            <div class="nav-p ab">
+               <p class="nav2">{{setCurrency}}</p>
+               <div class="drop-a">
+                  <div (click)="setTopData($event)" class="drop1">{{currency[0]}}</div>
+                  <div (click)="setTopData($event)" class="drop1">{{currency[1]}}</div>
+               </div>
+            </div>
+            <div class="nav-p">
+               <p class="nav2">Track Your Order</p>
+            </div>
+            <div class="nav-p">
+               <p class="nav2">Sore Location</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="navbar2">
+      <div class="inner2">
+         <div class="">
+            <img src="../../../assets/images/icons/logo_light-1.png" class="title-icon">
+         </div>
+         <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
+         <div class="field">
+            <select id="" class="select">
+               <option value="" selected disabled>Categories</option>
+               <option value="">Product</option>
+            </select>
+            <input type="text" size="60" class="inp" placeholder="Search Here">
+            <button class="search">Search</button>
+         </div>
+         <div class="noti">
+            <div class="notify">
+               <i class="far fa-heart" id="heart"></i>
+               <span class="point1">0</span>
+            </div>
+            <div class="cart">
+               <i class="fas fa-shopping-bag" id="bag"></i>
+               <span class="point2">0</span>
+            </div>
+            <div>
+               <button class="logout">Logout</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="navbar3">
+      <div class="step1">
+         <div class="navigations">
+            <div class="navigate" *ngFor="let nav of topNavbar">
+               <i [class]="nav.icon"></i>
+               <p class="nav">{{nav.nav_name}}</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,270 @@
+:host {
+    --most-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --navy-blue: #0071df;
+}
+
+.top-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.title-icon {
+    width: 160px;
+}
+
+.navbar {
+    /* background-color: #fcb800; */
+    padding: 0px !important;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #eff1f2;
+    height: 40px;
+}
+
+.inner1 {
+    display: flex;
+    align-items: center;
+    gap: 550px;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.inner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.ti,
+.num {
+    font-size: 13px;
+}
+
+.ti {
+    color: rgb(100, 100, 100);
+    font-family: 'FontAwesome';
+}
+
+.num {
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.inp {
+    /* outline: none; */
+    /* border: none; */
+    /* border-left: 1px solid rgb(184, 183, 183); */
+    font-size: 15px;
+    padding: 9px 10px;
+
+}
+
+.select {
+    /* outline: none; */
+    /* border: none; */
+    padding: 9px 2px 11px 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    left: 1px;
+}
+
+.search {
+    border: none;
+    padding: 12.4px 24px 11.5px 24px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    right: 1px;
+    font-weight: bold;
+    background-color: var(--navy-blue);
+}
+
+.noti {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#heart,
+#bag {
+    font-size: 28px;
+}
+
+.notify,
+.cart {
+    position: relative;
+}
+
+.point1,
+.point2 {
+    font-size: 10px;
+    position: absolute;
+    background-color: var(--navy-blue);
+    padding: 0px 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    left: 14px;
+    bottom: 0px;
+}
+
+.logout {
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    color: var(--navy-blue);
+    padding: 5px 20px;
+}
+
+.go-head {
+    position: relative;
+}
+
+.hamburger {
+    height: 25px;
+}
+
+.hamburger>div {
+    border: 0.5px solid black;
+    width: 20px;
+    margin: 5px 0px;
+}
+
+.navbar3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+    background-color: var(--navy-blue);
+}
+
+.step1a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.title>p {
+    font-size: 18px;
+    font-family: var(--most-family);
+    font-weight: bold;
+}
+
+.navigate {
+    position: relative;
+}
+
+/* .dropdown {
+    display: none;
+} */
+
+.navigations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 60px;
+}
+
+.nav {
+    font-size: 15px;
+    font-family: var(--most-family);
+}
+
+.step1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.drop-a {
+    display: none;
+    position: absolute;
+    top: 70px;
+    box-shadow: 1px 1px 1px grey;
+    left: -10px;
+    transition: 1s;
+    z-index: 99;
+    width: 60px;
+    background-color: white;
+}
+
+.ab:hover .drop-a {
+    transition: 1s;
+    top: 30px;
+    display: block;
+}
+
+.nav-p {
+    position: relative;
+    cursor: pointer;
+}
+
+.drop1 {
+    font-size: 12px;
+    font-family: bold;
+    font-family: var(--most-family);
+    width: 60px;
+    padding: 4px 10px;
+    transition: 0.5s;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.drop1:hover {
+    background-color: #f1d894;
+}
+
+.step2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav2 {
+    font-size: 15px;
+    font-family: var(--most-family);
+    border-right: 1px solid rgb(100, 100, 100);
+    padding-right: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+
+.drop-b {
+    display: none;
+    position: absolute;
+    box-shadow: 1px 1px 1px grey;
+    left: -10px;
+    transition: 1s;
+    z-index: 999;
+}
+
+.bc:hover .drop-b {
+    top: 30px;
+    display: block;
+}
