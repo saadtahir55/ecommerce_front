@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { BaseService } from 'src/app/services/base.service';
+import { environment } from 'src/environment/environment';
+import { endPoint } from 'src/app/constant/endpoint';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit{
-  constructor(private http: HttpClient){}
+export class NavbarComponent extends BaseService implements OnInit {
 
   headerData: any;
   setlanguage: string = 'English';
@@ -16,27 +17,26 @@ export class NavbarComponent implements OnInit{
 
   currency: any = ['US Dollars', 'PAK Rs'];
   language: any = ['English', 'Urdu'];
-  
+
   ngOnInit() {
     this.fetchNavbarData();
   }
-  
-  setTopData(event: any){
+
+  setTopData(event: any) {
     let textContext = event.target.innerText;
-    if(textContext == 'US Dollars' || textContext == 'PKR Rs'){
+    if (textContext == 'US Dollars' || textContext == 'PKR Rs') {
       this.setCurrency = textContext;
-    }else{
+    } else {
       this.setlanguage = textContext;
     }
   }
 
-  fetchNavbarData(){
-    this.http.get('http://192.168.0.110:5000/api/navbar').subscribe((res: any) => {
+  fetchNavbarData() {
+    this._http.getData(environment.apiUrl, endPoint.NAVBAR).subscribe(res=>{
       this.topNavbar = res;
-      console.log(this.topNavbar);
     })
   }
 
-  
-  
+
+
 }

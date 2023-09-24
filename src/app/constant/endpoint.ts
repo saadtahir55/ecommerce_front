@@ -1,3 +1,6 @@
 export enum endPoint {
-   PRODUCTS = "products"
+   PRODUCTS = "products",
+   CATEGORIES = 'categories',
+   NAVBAR = 'navbar',
+   SATISFICATION = 'satisfication'
 }
