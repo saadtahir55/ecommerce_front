@@ -65,10 +65,10 @@
    <div class="navbar3">
       <div class="step1">
          <div class="navigations">
-            <div class="navigate" *ngFor="let nav of topNavbar">
-               <i [class]="nav.icon"></i>
-               <p class="nav">{{nav.nav_name}}</p>
-            </div>
+            <a class="navigate" *ngFor="let nav of topNavbar">
+               <i id="icon" [class]="nav.icon"></i>
+               <span class="nav">{{nav.nav_name}}</span>
+            </a>
          </div>
       </div>
    </div>
